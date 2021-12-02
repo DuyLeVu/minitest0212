@@ -16,7 +16,7 @@
 <center>
     <h1>Product Management</h1>
     <h2>
-        <a href="/users?action=create">Add New Product</a>
+        <a href="/products?action=create">Add New Product</a>
     </h2>
 </center>
 <div align="center">
@@ -35,8 +35,8 @@
                 <td><c:out value="${product.price}"/></td>
                 <td><c:out value="${product.quantity}"/></td>
                 <td>
-                    <a href="/users?action=edit&id=${product.id}">Edit</a>
-                    <a href="/users?action=delete&id=${product.id}">Delete</a>
+                    <a href="/products?action=edit&id=${product.id}">Edit</a>
+                    <a href="/products?action=delete&id=${product.id}">Delete</a>
                 </td>
             </tr>
         </c:forEach>
